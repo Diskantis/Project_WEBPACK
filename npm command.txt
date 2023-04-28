@@ -1,0 +1,17 @@
+решение проблеммы с npm run dev: 
+npm config set script-shell null (по умолчанию)
+npm config set script-shell bash
+npm config set script-shell powershell
+npm config set script-shell "C:\\WINDOWS\\system32\\cmd.exe"
+
+npm list -g --depth=0 просмотр глобально установленных пакетов npm
+npm list --depth=0 просмотр локально установленных (в проекте) пакетов npm
+
+npm uninstall -g <package_name> удаление глобально установленных пакетов npm
+npm uninstall <package_name> удаление локально установленных (в проекте) пакетов npm
+
+Установка Webpack:
+npm install -D webpack webpack-cli
+
+-D - устанавливает зависимости только для режима (--mode developer - режим разработки)
+в раздел package.json -> "devDependencies": {}
